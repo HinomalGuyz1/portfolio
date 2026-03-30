@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>北田 鼓太郎 — Portfolio</title>
+    <meta name="description" content="北田鼓太郎のポートフォリオ。東海大学大学院 竹村研究室で、コンタクトセンシングの研究に従事。" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ========== ナビゲーション ========== -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">K. Kitada</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== ヒーローセクション ========== -->
+    <header class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-greeting">こんにちは、私は</p>
+                <h1 class="hero-name">北田 鼓太郎</h1>
+                <p class="hero-name-en">KITADA Kotaro</p>
+                <p class="hero-desc">東海大学大学院 工学研究科<br />竹村研究室｜コンタクトセンシング</p>
+                <div class="hero-tags">
+                    <span class="tag">Contact Sensing</span>
+                    <span class="tag">FTIR</span>
+                    <span class="tag">HCI</span>
+                    <span class="tag">Touch Interface</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#publications" class="btn btn-primary">研究業績を見る</a>
+                    <a href="#about" class="btn btn-secondary">About Me</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="images/uist2024.jpg" alt="UIST 2024 Pittsburgh にて" />
+                </div>
+                <p class="photo-caption">UIST 2024 · Pittsburgh, USA</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== About ========== -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎓</div>
+                    <h3>所属</h3>
+                    <p>東海大学大学院 工学研究科<br />竹村研究室</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔬</div>
+                    <h3>研究分野</h3>
+                    <p>コンタクトセンシング<br />ヒューマンコンピュータインタラクション (HCI)</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💡</div>
+                    <h3>研究テーマ</h3>
+                    <p>漏れ全反射 (FTIR) の再伝播現象を利用した<br />透明面タッチセンシング技術</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🌏</div>
+                    <h3>国際経験</h3>
+                    <p>ACM UIST 2024（ピッツバーグ）にて<br />Oral発表を実施</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Research ========== -->
+    <section class="section section-alt" id="research">
+        <div class="section-inner">
+            <h2 class="section-title">Research</h2>
+            <div class="research-content">
+                <div class="research-main">
+                    <h3>RFTIRTouch</h3>
+                    <p class="research-subtitle">再伝播する漏れ全反射に基づくタッチセンシングデバイス</p>
+                    <p class="research-body">
+                        透明な平面の両面からのタッチ入力を同時に検出できるセンシング技術「RFTIRTouch」を開発しました。
+                        従来のFTIR（Frustrated Total Internal Reflection）方式では、片面からの接触しか検出できませんでしたが、
+                        漏れ全反射光の再伝播現象を新たに発見・活用することで、両面タッチの同時検出を実現しています。
+                    </p>
+                    <div class="research-highlights">
+                        <div class="highlight">
+                            <span class="highlight-num">ACM UIST 2024</span>
+                            <span class="highlight-label">採択（Oral発表）</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-num">両面</span>
+                            <span class="highlight-label">透明面タッチ検出</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-num">複数指</span>
+                            <span class="highlight-label">同時接触位置推定</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Publications ========== -->
+    <section class="section" id="publications">
+        <div class="section-inner">
+            <h2 class="section-title">Publications</h2>
+
+            <!-- 国際 -->
+            <h3 class="pub-category">International Conference（国際学会）</h3>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <div class="pub-badge intl">UIST 2024</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Ratchanon Wattanaparinton, <strong>Kotaro Kitada</strong>, and Kentaro
+                            Takemura</p>
+                        <p class="pub-title">"RFTIRTouch: Touch Sensing Device for Dual-sided Transparent Plane Based on
+                            Repropagated Frustrated Total Internal Reflection"</p>
+                        <p class="pub-venue">in Proceedings of the 37th Annual ACM Symposium on User Interface Software
+                            and Technology (UIST2024), Article 113, 1–10. (Oral)</p>
+                        <a href="https://doi.org/10.1145/3654777.3676428" class="pub-doi" target="_blank"
+                            rel="noopener">DOI: 10.1145/3654777.3676428 ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 国内 -->
+            <h3 class="pub-category">Domestic Conference（国内学会）</h3>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <div class="pub-badge domestic">SI 2025</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>北田鼓太郎</strong>，竹村憲太郎</p>
+                        <p class="pub-title">"再伝播する漏れ全反射画像に基づく複数接触位置推定"</p>
+                        <p class="pub-venue">第26回 計測自動制御学会 システムインテグレーション部門講演会，1D2-12，2025年12月10日，広島県・広島市</p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-badge domestic">Robomech 2025</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>北田鼓太郎</strong>，ワッタナパリントンラッチャノン，竹村憲太郎</p>
+                        <p class="pub-title">"漏れ全反射の再伝播を用いたタッチデバイス"</p>
+                        <p class="pub-venue">ロボティクスメカトロニクス講演会2025，1A2-T05，2025年6月5日，山形県・山形市</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Gallery ========== -->
+    <section class="section section-alt" id="gallery">
+        <div class="section-inner">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-featured">
+                    <img src="images/uist2024.jpg" alt="UIST 2024 Pittsburgh" />
+                    <div class="gallery-overlay">
+                        <p class="gallery-label">UIST 2024 · Pittsburgh, USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== フッター ========== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-name">北田 鼓太郎 — KITADA Kotaro</p>
+            <p class="footer-affil">東海大学大学院 工学研究科 竹村研究室</p>
+            <p class="footer-copy">&copy; 2026 Kotaro Kitada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
